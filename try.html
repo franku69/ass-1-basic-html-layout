@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, nav, footer {
+            flex: 0 0 10vh;
+            background: rgb(130, 184, 255);
+            border: solid 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            background: rgb(214, 78, 15);
+        }
+        .side {
+            flex: 1;
+            border: solid 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main.side {
+            flex: 3; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main.side div {
+            text-align: center;
+            padding: 2rem;
+            width: 80%; 
+            margin: 0 auto; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <H1 style="font-size:3rem;">Header</H1>
+    </header>
+    <nav>
+        <H1 style="font-size:3rem;">Navigation</H1>
+    </nav>
+    <div class="container">
+        <div class="side">
+            <H1 style="font-size:3rem;">Side</H1>
+        </div>
+
+        <main class="side">
+            <div>
+                <H1 style="font-size:3rem;">Main</H1>
+            </div>
+        </main>
+
+        <div class="side">
+            <H1 style="font-size:3rem;">Side</H1>
+        </div>
+    </div>
+    <footer>
+        <H1 style="font-size:3rem;">Footer</H1>
+    </footer>
+</body>
+</html>
